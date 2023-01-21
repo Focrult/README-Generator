@@ -2,6 +2,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+//include markdown here?
+const markdown = require('./utils/generateMarkdown');
 const questions = [
     inquirer
     .prompt([
@@ -36,13 +38,19 @@ const questions = [
         name: 'test instructions',
     },
     {
+        type: 'input',
+        message: "Enter your Github username",
+        name: 'github username',
+    },
+    {
     type: 'list',
     message: "Choose a license below: ",
     choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
     name: 'license'
-    },
+    }
     ])
-];
+]
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeToFile(fileName, `${process.argv[0]}\n`, (err) =>
@@ -50,7 +58,16 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+// const data = await inquirer.promt(questions);
+function init() {
+ const input = await inquirer.promt(questions); //fix this error
+
+    // questions();
+    // if(questions.length){
+    //     writeToFile();
+    //     console.log("passed");
+    //     }
+}
 
 // Function call to initialize app
 init();
