@@ -1,1 +1,0 @@
-{"title":"t","description":"t","installation":"t","usage":"t","contribution":"","instructions":"t","credits":"t","license":"GNU AGPLv3","github":"t","email":"t"}

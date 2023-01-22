@@ -10,17 +10,17 @@ const questions = [
     {
         type: 'input',
         message: 'Enter your title:',
-        name: 'title',
+        name: 'title'
     },
     {
         type: 'input',
         message: 'Enter your description:',
-        name: 'description',
+        name: 'description'
     },
     {
         type: 'input',
         message: 'What are your installation instructions?',
-        name: 'installation',
+        name: 'installation'
     },
     {
         type: 'input',
@@ -61,31 +61,25 @@ const questions = [
     ])
     .then(({title, description, installation, usage, contribution, instructions, credits, license, github, email}) => {
         const data = {title, description, installation, usage, contribution, instructions, credits, license, github, email};
-        markdown(data);
-        const fileName = path.join(__dirname, 'file.txt');
-        console.log(fileName, data);
-        writeToFile(fileName, data);
-        console.log(fileName, data);
+        const m = markdown(data);
+
+        console.log(m);
+        writeToFile(m)
     })
 ]
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, `${JSON.stringify(data)}\n`,(err) =>
+function writeToFile(data) {
+    fs.writeFile('README2.md', `${JSON.stringify(data)}\n`,(err) =>
         err ? console.error(err) : console.log("logged!"));
     }
-    // fs.writeToFile(fileName, data, err =>
-    // err ? console.error(err) : console.log("Info Logged!"))
+
 
 
 
 // TODO: Create a function to initialize app
-async function init() {
-//  try{
-//     const response = await inquirer.prompt(questions);
-//     const markdown = markdown();
-//  }
+function init() {
 
 }
 
 // Function call to initialize app
-//init();
+// init();
