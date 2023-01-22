@@ -33,16 +33,7 @@ function generateMarkdown(data) {
   GitHub: ${data.github}
   Email: ${data.email}
   `//END
-
-  //title
-  //description
-  //installation information
-  //usage
-  //guidelines
-  //test instructions
-  //github user information
-  //licence
-
+  return markdown;
 }
 //data will be our file that will be generated
 module.exports = generateMarkdown;
