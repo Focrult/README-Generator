@@ -1,1 +1,30 @@
-"# t\n\n  ##Table of Contents\n  - [Description](#Description)\n  - [Installation](#Installation)\n  - [Usage](#Usage)\n  - [Contributors](#Contributors)\n  - [Instructions](#Instructions)\n  - [Credits](#credits)\n  - [License](#License)\n  - [Contact](#contact)\n\n  ## Description\n  t\n  ## Installation\n  t\n  ## Usage\n  t\n  ## Contributors\n  t\n  ## Instructions\n  t\n  ## Credits\n  undefined\n  ## License\n  Academic Free License v3.0\n  ## Contact\n  GitHub: t\n  Email: t\n  "
+# title
+
+  ##Table of Contents
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Contributors](#Contributors)
+  - [Instructions](#Instructions)
+  - [Credits](#credits)
+  - [License](#License)
+  - [Contact](#contact)
+
+  ## Description
+  description
+  ## Installation
+  install
+  ## Usage
+  use
+  ## Contributors
+  guidelines
+  ## Instructions
+  test
+  ## Credits
+  undefined
+  ## License
+  MIT License
+  ## Contact
+  GitHub: focrult
+  Email: focrult@gmail.com
+  

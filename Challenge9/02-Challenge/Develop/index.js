@@ -64,12 +64,12 @@ const questions = [
         const m = markdown(data);
 
         console.log(m);
-        writeToFile(m)
+        writeToFile(m);
     })
 ]
 // TODO: Create a function to write README file
 function writeToFile(data) {
-    fs.writeFile('README2.md', `${JSON.stringify(data)}\n`,(err) =>
+    fs.writeFile('README2.md', data,(err) =>
         err ? console.error(err) : console.log("logged!"));
     }
 
