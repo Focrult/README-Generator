@@ -1,4 +1,6 @@
-# t
+# f
+
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
   - [Description](#description)
@@ -11,20 +13,20 @@
   - [Contact](#contact)
 
   ## Description
-  
+  f
   ## Installation
-  t
+  f
   ## Usage
-  t
+  
   ## Contributors
-  t
+  f
   ## Instructions
-  t
+  f
   ## Credits
   undefined
   ## License
-  Academic Free License v3.0
+  Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license
   ## Contact
-  ### GitHub URL: https://github.com/focrult
-  ### Email: focrult@gmail.com
+  ### GitHub URL: https://github.com/f
+  ### Email: f
   

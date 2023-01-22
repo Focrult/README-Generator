@@ -45,7 +45,7 @@ const questions = [
     {
         type: 'list',
         message: "Choose a license below: ",
-        choices: ['Academic Free License v3.0', 'Apache License 2.0', 'Artistic license 2.0', 'Boost Software License 1.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0',  'MIT License',  'The Unlicense'],
+        choices: ['Academic Free License v3.0', 'Apache License 2.0', 'Artistic license 2.0', 'Boost Software License 1.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0',  'mit',  'The Unlicense'],
         name: 'license'
     },
     {
@@ -67,19 +67,16 @@ const questions = [
         writeToFile(m);
     })
 ]
-// TODO: Create a function to write README file
 function writeToFile(data) {
     fs.writeFile('README2.md', data,(err) =>
         err ? console.error(err) : console.log("logged!"));
     }
-
-
-
-
 // TODO: Create a function to initialize app
 function init() {
-
+    console.log("Welcome to my README generator!");
+    console.log("Follow and answer the questions provided below, and you will have a completed README for your github repositories!");
+    console.log("--------------------------------------------------------------------------");
 }
 
 // Function call to initialize app
-// init();
+init();
