@@ -30,25 +30,38 @@ const questions = [
     {
         type: 'input',
         message: 'Enter your contribution guidelines: ',
-        name: 'contribution guidelines',
+        name: 'contribution',
     },
     {
         type: 'input',
         message: 'Discuss test instructions:',
-        name: 'test instructions',
+        name: 'instructions',
+    },
+    {
+        type: 'input',
+        message: "Enter yours projects credits",
+        name: 'credits',
+    },
+    {
+        type: 'list',
+        message: "Choose a license below: ",
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        name: 'license'
     },
     {
         type: 'input',
         message: "Enter your Github username",
-        name: 'github username',
+        name: 'github',
     },
     {
-    type: 'list',
-    message: "Choose a license below: ",
-    choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
-    name: 'license'
+        type: 'input',
+        message: "Enter your email",
+        name: 'email',
     }
-    ])
+    ].then(({title, description, installation, usage, contribution, instructions, credits, license, github, email}) => {
+        const data = {title, description, installation, usage, contribution, instructions, credits, license, github, email};
+        markdown.render(data);
+    }))
 ]
 
 // TODO: Create a function to write README file
@@ -60,14 +73,18 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 // const data = await inquirer.promt(questions);
 function init() {
- const input = await inquirer.promt(questions); //fix this error
-
+    try{
+//  const input = await inquirer.promt(questions); //fix this error
+ console.log("Initializing", input);
+    }catch (error){console.log("error")
+    }
     // questions();
     // if(questions.length){
     //     writeToFile();
     //     console.log("passed");
     //     }
 }
+
 
 // Function call to initialize app
 init();
