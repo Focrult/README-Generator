@@ -15,14 +15,14 @@ function generateMarkdown(data) {
   const markdownComplete = 
   `# ${data.title}
 
-  ##Table of Contents
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Contributors](#Contributors)
-  - [Instructions](#Instructions)
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributors](#contributors)
+  - [Instructions](#instructions)
   - [Credits](#credits)
-  - [License](#License)
+  - [License](#license)
   - [Contact](#contact)
 
   ## Description
@@ -40,8 +40,8 @@ function generateMarkdown(data) {
   ## License
   ${data.license}
   ## Contact
-  GitHub: ${data.github}
-  Email: ${data.email}
+  ### GitHub URL: ${data.github}
+  ### Email: ${data.email}
   `//END
   console.log(markdownComplete); //Displays complete readme file
   return markdownComplete;

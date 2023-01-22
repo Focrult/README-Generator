@@ -1,30 +1,30 @@
-# title
+# README TEST
 
-  ##Table of Contents
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Contributors](#Contributors)
-  - [Instructions](#Instructions)
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributors](#contributors)
+  - [Instructions](#instructions)
   - [Credits](#credits)
-  - [License](#License)
+  - [License](#license)
   - [Contact](#contact)
 
   ## Description
-  description
+  HEre is the description for the readme
   ## Installation
-  install
+  N/A
   ## Usage
-  use
+  THis is used to egenrate an working readme file for Github
   ## Contributors
-  guidelines
+  n/a
   ## Instructions
-  test
+  load up the application in node and follow the instructions presented
   ## Credits
   undefined
   ## License
   MIT License
   ## Contact
-  GitHub: focrult
-  Email: focrult@gmail.com
+  ### GitHub URL: focrult
+  ### Email: focrult@gmail.com
   
