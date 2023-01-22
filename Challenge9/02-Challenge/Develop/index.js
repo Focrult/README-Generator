@@ -58,10 +58,12 @@ const questions = [
         message: "Enter your email",
         name: 'email',
     }
-    ].then(({title, description, installation, usage, contribution, instructions, credits, license, github, email}) => {
+    ])
+    .then(({title, description, installation, usage, contribution, instructions, credits, license, github, email}) => {
         const data = {title, description, installation, usage, contribution, instructions, credits, license, github, email};
-        markdown.render(data);
-    }))
+        console.log(data);
+        markdown(data);
+    })
 ]
 
 // TODO: Create a function to write README file
