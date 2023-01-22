@@ -61,7 +61,6 @@ const questions = [
     ])
     .then(({title, description, installation, usage, contribution, instructions, credits, license, github, email}) => {
         const data = {title, description, installation, usage, contribution, instructions, credits, license, github, email};
-        console.log(data);
         markdown(data);
     })
 ]
