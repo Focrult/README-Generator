@@ -45,7 +45,7 @@ const questions = [
     {
         type: 'list',
         message: "Choose a license below: ",
-        choices: ['Academic Free License v3.0', 'Apache License 2.0', 'Artistic license 2.0', 'Boost Software License 1.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0',  'mit',  'The Unlicense'],
+        choices: ['ISC', 'Apache License 2.0', 'Artistic license 2.0', 'Boost Software License 1.0', 'GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3',  'MIT License',  'The Unlicense'],
         name: 'license'
     },
     {
@@ -76,6 +76,7 @@ function init() {
     console.log("Welcome to my README generator!");
     console.log("Follow and answer the questions provided below, and you will have a completed README for your github repositories!");
     console.log("--------------------------------------------------------------------------");
+    questions
 }
 
 // Function call to initialize app
