@@ -1,4 +1,4 @@
-# README TEST
+# t
 
   ## Table of Contents
   - [Description](#description)
@@ -11,20 +11,20 @@
   - [Contact](#contact)
 
   ## Description
-  HEre is the description for the readme
+  
   ## Installation
-  N/A
+  t
   ## Usage
-  THis is used to egenrate an working readme file for Github
+  t
   ## Contributors
-  n/a
+  t
   ## Instructions
-  load up the application in node and follow the instructions presented
+  t
   ## Credits
   undefined
   ## License
-  MIT License
+  Academic Free License v3.0
   ## Contact
-  ### GitHub URL: focrult
+  ### GitHub URL: https://github.com/focrult
   ### Email: focrult@gmail.com
   

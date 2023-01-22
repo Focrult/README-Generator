@@ -40,7 +40,7 @@ function generateMarkdown(data) {
   ## License
   ${data.license}
   ## Contact
-  ### GitHub URL: ${data.github}
+  ### GitHub URL: https://github.com/${data.github}
   ### Email: ${data.email}
   `//END
   console.log(markdownComplete); //Displays complete readme file
