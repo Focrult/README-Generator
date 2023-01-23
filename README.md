@@ -22,7 +22,7 @@ Furthermore, running node index.js inside your console will display a welcome me
 The usage for this project, is to enable any developer who wants to create a professional README, and to do so in quick and easy fashion. Providing an easy to use application for any developer, allowing the user to devote more time working on other components for their project.
 
 # GIF
-This GIF demostrates what the user would see and how to answer the following questions. A full video is provided below for the 
+This GIF demostrates what the user would see and how to answer the following questions. A full video is provided below if anyone wants to see what is generated after completing all the questions.
 
 ![readmeshortGIF](https://user-images.githubusercontent.com/114898970/213962100-dd402c75-0c0c-4894-a1d0-7c45622ad18f.gif)
 
