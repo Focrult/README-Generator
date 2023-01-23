@@ -1,9 +1,8 @@
-//Install fs & inquirer
+
 const fs = require('fs');
 const inquirer = require('inquirer');
-const path = require('path');
-//include markdown here?
 const markdown = require('./utils/generateMarkdown');
+init();
 const questions = [
     inquirer
     .prompt([
@@ -68,16 +67,13 @@ const questions = [
     })
 ]
 function writeToFile(data) {
-    fs.writeFile('README2.md', data,(err) =>
+    fs.writeFile('README-2.md', data,(err) =>
         err ? console.error(err) : console.log("logged!"));
     }
-// TODO: Create a function to initialize app
+// Function to display welcome message - questions will automatically display.
 function init() {
     console.log("Welcome to my README generator!");
     console.log("Follow and answer the questions provided below, and you will have a completed README for your github repositories!");
     console.log("--------------------------------------------------------------------------");
-    questions
 }
 
-// Function call to initialize app
-init();
