@@ -2,8 +2,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const markdown = require('./utils/generateMarkdown');
-init();
-const questions = [
+init(); //initialize the welcome message
+const questions = [ //series of questions
     inquirer
     .prompt([
     {
@@ -54,16 +54,16 @@ const questions = [
     }
     ])
     .then(({title, description, installation, usage, contribution, tests, license, github, email}) => {
-        const data = {title, description, installation, usage, contribution, tests, license, github, email};
+        const data = {title, description, installation, usage, contribution, tests, license, github, email}; //after completing the questions, data will be passed to the markdown function
         const m = markdown(data);
 
         console.log(m);
-        writeToFile(m);
+        writeToFile(m); //after data is returned from the function it will now be passed to the writeTofile function
     })
 ]
 function writeToFile(data) {
     fs.writeFile('README-2.md', data,(err) =>
-        err ? console.error(err) : console.log("logged!"));
+        err ? console.error(err) : console.log("logged!")); //verifys that the data has been logged and the readme is created!
     }
 // Function to display welcome message - questions will automatically display.
 function init() {
