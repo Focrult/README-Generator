@@ -23,8 +23,12 @@ Furthermore, running node index.js will display a welcome message and prompts fr
 # Usage
 
 
-# Screeshots + Link
-Link to the deployed application: 
+# GIF
+This GIF demostrates what the user would see and how to answer the following questions. A full video is provided below for the 
+
+![readmeshortGIF](https://user-images.githubusercontent.com/114898970/213962100-dd402c75-0c0c-4894-a1d0-7c45622ad18f.gif)
+
+Link to full video: https://drive.google.com/file/d/1aMy0ImLHdO9xSBE9kDO3v7G6VIXVCMrp/view
 
 # Credits
 N/A
