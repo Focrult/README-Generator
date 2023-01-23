@@ -24,7 +24,7 @@
   ## License
   This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
   ## Questions
-  ### Contact me through the following links provided below!
+  ### Contact me through the following links provided below, if you have any further questions!
   ### GitHub URL: https://github.com/focrult
   ### Email: focrult@gmail.com
   
