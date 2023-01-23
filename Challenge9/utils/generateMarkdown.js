@@ -1,5 +1,4 @@
 // Function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license == 'MIT License'){
     license = 'mit';
@@ -19,8 +18,8 @@ function renderLicenseBadge(license) {
     license = 'AL2';
   }if(license == 'The Unlicense'){
     license = 'unlicense';
-  }if(license == undefined){
-    return ' ';
+  }if(license == undefined || license == 'Other'){
+    return ' '; //returns empty string
   }
     const licenseBadge = {
       mit: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
@@ -36,8 +35,7 @@ function renderLicenseBadge(license) {
     return licenseBadge[license]
   }
 
-//Function that returns the license link
-// If there is no license, return an empty string
+//Function that returns the license link based on which license is passed in
 function renderLicenseLink(license) {
   if(license == 'MIT License'){
     license = 'mit';
@@ -57,8 +55,8 @@ function renderLicenseLink(license) {
     license = 'AL2';
   }if(license == 'The Unlicense'){
     license = 'unlicense';
-  }if(license == undefined){
-    return ' ';
+  }if(license == undefined || license == 'Other'){
+    return ' '; //returns empty string
   }
     const licenseLink = { 
       mit: '[MIT](https://choosealicense.com/licenses/mit/)',
@@ -76,7 +74,6 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  console.log('render license section');
 if(license){
   return `This project is licensed under the ${renderLicenseLink(license)} license.`
 }else{
@@ -95,11 +92,10 @@ function generateMarkdown(data) {
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributors](#contributors)
-  - [Instructions](#instructions)
-  - [Credits](#credits)
+  - [Contribution](#contribution)
+  - [Tests](#tests)
   - [License](#license)
-  - [Contact](#contact)
+  - [Questions](#questions)
 
   ## Description
   ${data.description}
@@ -107,15 +103,14 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Usage
   ${data.usage}
-  ## Contributors
+  ## Contribution
   ${data.contribution}
-  ## Instructions
-  ${data.instructions}
-  ## Credits
-  ${data.credits}
+  ## Tests
+  ${data.tests}
   ## License
   ${renderLicenseSection(data.license)}
-  ## Contact
+  ## Questions
+  ### Contact me through the following links provided below!
   ### GitHub URL: https://github.com/${data.github}
   ### Email: ${data.email}
   `//END
