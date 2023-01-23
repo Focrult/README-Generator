@@ -110,7 +110,7 @@ function generateMarkdown(data) {
   ## License
   ${renderLicenseSection(data.license)}
   ## Questions
-  ### Contact me through the following links provided below!
+  ### Contact me through the following links provided below, if you have any further questions!
   ### GitHub URL: https://github.com/${data.github}
   ### Email: ${data.email}
   `//END
